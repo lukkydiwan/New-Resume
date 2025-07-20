@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../pages/Contact/ContactPage.css'
 /* TypedJs */
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'react-simple-typewriter';
 
 /* Multi idioma */
 import { FormattedMessage } from 'react-intl';
