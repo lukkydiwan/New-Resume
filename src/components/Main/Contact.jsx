@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../pages/Contact/ContactPage.css'
 /* TypedJs */
-import Typical from 'react-typical';
+import Typewriter from 'typewriter-effect';
 
 /* Multi idioma */
 import { FormattedMessage } from 'react-intl';
@@ -21,19 +21,22 @@ const Contact = () => (
                 id='contact-info'
                 defaultMessage='Contact me by: '
             />
-            <Typical
-                className="site-contacto"
-                loop={Infinity}
-                wrapper="b"
-                steps={[
-                    'Gmail', 1500,
-                    'WhatsApp', 1500,
-                    'Instragram', 1500,
-                    'Telegram', 1500,
-                    'Linkedin', 1500,
-                    'Github', 1500,
-                ]}
-            />
+            <Typewriter
+    words={[
+      'Gmail',
+      'WhatsApp',
+      'Instagram',
+      'Telegram',
+      'LinkedIn',
+      'GitHub',
+    ]}
+    loop={0}            /* 0 = infinite */
+    cursor
+    cursorStyle="|"
+    typeSpeed={80}      /* typing speed in ms */
+    deleteSpeed={50}    /* back‑spacing speed */
+    delaySpeed={1500}   /* pause before deleting */
+  />
 
         </h3>
 
